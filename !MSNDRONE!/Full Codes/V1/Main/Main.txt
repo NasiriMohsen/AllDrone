@@ -1,0 +1,49 @@
+//Main Code
+
+#include "IMU.h"
+
+float MPUVals[12];
+float Pitch,Roll,Yaw;
+float accelerationX,accelerationY,accelerationZ;
+
+
+void setup() {
+  Serial.begin(115200);
+  MPUInit();
+}
+
+void loop() {  
+  UpdateMPU();
+  MPUVals[11] = Temperature();
+  MPUVals[10] = AccelerationAngleY();
+  MPUVals[9] = AccelerationAngleX();
+
+  MPUVals[8] = AngleZ();
+  MPUVals[7] = AngleY();
+  MPUVals[6] = AngleX();
+
+  MPUVals[5] = GyroZ();
+  MPUVals[4] = GyroY();
+  MPUVals[3] = GyroX();
+
+  MPUVals[2] = AccelerationZ();
+  MPUVals[1] = AccelerationY();
+  MPUVals[0] = AccelerationX();
+  
+  accelerationX = MPUVals[0];
+  accelerationY = MPUVals[1];
+  accelerationZ = MPUVals[2];
+
+  Pitch = 180/PI * atan2(accelerationX,sqrt(accelerationY*accelerationY + accelerationZ*accelerationZ));
+  Roll = 180/PI * atan2(accelerationY,accelerationZ);
+  //Yaw = 180/PI * atan(accelerationZ/sqrt(accelerationX*accelerationX + accelerationZ*accelerationZ));
+
+
+  /*
+  for (int i = 0;i < 12; i++){
+    Serial.print(MPUVals[i]);
+    Serial.print("\t");
+  }
+  Serial.println("");
+  */
+}
