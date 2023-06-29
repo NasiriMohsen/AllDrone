@@ -1,0 +1,132 @@
+Log.......
+
+[MainWindow::MainWindow(QWidget*) @41] Create DownLoad Thread
+[MainWindow::MainWindow(QWidget*) @47] configuration UI
+[MainWindow::MainWindow(QWidget*) @77] Create loginTimer
+[void MainWindow::TimerLogin() @129] USB Connected
+[void MainWindow::on_pushButton_Choose_clicked() @190] radioButton_dfu!
+[void MainWindow::on_pushButton_Choose_clicked() @229] ch:C:/Users/mohse/Desktop/NEW DRONE/win7&win8&win10_�___�__-AT9SPro&AT9S&AT9/USB-util_1.2_win7&win8&win10/V1_1_3.dfu
+[void MainWindow::on_pushButton_Choose_clicked() @230] 中文:汉字
+[void MainWindow::on_pushButton_Choose_clicked() @190] radioButton_dfu!
+[void MainWindow::on_pushButton_Choose_clicked() @229] ch:C:/Users/mohse/Desktop/NEW DRONE/AT9SPRO_Defaultfirmware_V2_0_2S.dfu
+[void MainWindow::on_pushButton_Choose_clicked() @230] 中文:汉字
+[void MainWindow::on_pushButton_Download_clicked() @283] DFU Download ...
+[int dfu_unit::downloadDFU(QString) @93] downloadDFU path:C:/Users/mohse/Desktop/NEW DRONE/AT9SPRO_Defaultfirmware_V2_0_2S.dfu
+[main_dfu @776] DownLoad Thread start ...
+[main_dfu @785] arg Parse ...
+[main_dfu @858] filename:C:/Users/mohse/Desktop/NEW DRONE/AT9SPRO_Defaultfirmware_V2_0_2S.dfu
+[print_version @655] dfu-util 0.6
+
+[print_version @658] Copyright 2005-2008 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2012 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+
+[main_dfu @899] Filter on vendor = 0x0483 product = 0xdf12
+[main_dfu @923] Find Device ...
+[iterate_dfu_devices @390] bus-0/\\.\libusb0-0001--0x0483-0xdf12     0483/DF12
+[main_dfu @940] get_first_dfu_device
+[iterate_dfu_devices @390] bus-0/\\.\libusb0-0001--0x0483-0xdf12     0483/DF12
+[main_dfu @947] Opening DFU capable USB device... 
+[main_dfu @961] get_first_dfu_if
+[find_dfu_if @168] idVendor:483
+[find_dfu_if @169] idProduct:df12
+[find_dfu_if @178] bConfigurationValue:1
+[find_dfu_if @190] bInterfaceClass:fe
+[find_dfu_if @191] bInterfaceSubClass:1
+[find_dfu_if @192] bInterfaceNumber:0
+[find_dfu_if @193] bAlternateSetting:0
+[find_dfu_if @194] bInterfaceProtocol:2
+[main_dfu @966] ID 0483:df12
+[main_dfu @974] get_cached_extra_descriptor
+[get_cached_extra_descriptor @600] bus-0/\\.\libusb0-0001--0x0483-0xdf12     0483/DF12
+[get_cached_extra_descriptor @607] num_altsetting = 2
+[get_cached_extra_descriptor @608] extra = (null)
+[get_cached_extra_descriptor @609] extra_len = 9
+[get_cached_extra_descriptor @612] extra:(null) [bLength:9]
+[main_dfu @992] Run-time device DFU version 0000
+[main_dfu @1135] count_matching_dfu_if
+[find_dfu_if @168] idVendor:483
+[find_dfu_if @169] idProduct:df12
+[find_dfu_if @178] bConfigurationValue:1
+[find_dfu_if @190] bInterfaceClass:fe
+[find_dfu_if @191] bInterfaceSubClass:1
+[find_dfu_if @192] bInterfaceNumber:0
+[find_dfu_if @193] bAlternateSetting:0
+[find_dfu_if @194] bInterfaceProtocol:2
+[find_dfu_if @190] bInterfaceClass:fe
+[find_dfu_if @191] bInterfaceSubClass:1
+[find_dfu_if @192] bInterfaceNumber:0
+[find_dfu_if @193] bAlternateSetting:1
+[find_dfu_if @194] bInterfaceProtocol:2
+[main_dfu @1150] get_matching_dfu_if
+[find_dfu_if @168] idVendor:483
+[find_dfu_if @169] idProduct:df12
+[find_dfu_if @178] bConfigurationValue:1
+[find_dfu_if @190] bInterfaceClass:fe
+[find_dfu_if @191] bInterfaceSubClass:1
+[find_dfu_if @192] bInterfaceNumber:0
+[find_dfu_if @193] bAlternateSetting:0
+[find_dfu_if @194] bInterfaceProtocol:2
+[main_dfu @1162] dif->alt_name:@Internal Flash  /0x08000000/12*001Ka,500*001Kg
+[main_dfu @1172] Claiming USB DFU Interface...
+[main_dfu @1179] Setting Alternate Setting #0 ...
+[main_dfu @1187] Determining device status: [main_dfu @1194] state = dfuERROR, status = 10
+[main_dfu @1206] dfuERROR, clearing status
+[main_dfu @1187] Determining device status: [main_dfu @1194] state = dfuIDLE, status = 0
+[main_dfu @1223] dfuIDLE, continuing
+[main_dfu @1246] get_cached_extra_descriptor
+[get_cached_extra_descriptor @600] bus-0/\\.\libusb0-0001--0x0483-0xdf12     0483/DF12
+[get_cached_extra_descriptor @607] num_altsetting = 2
+[get_cached_extra_descriptor @608] extra = (null)
+[get_cached_extra_descriptor @609] extra_len = 9
+[get_cached_extra_descriptor @612] extra:(null) [bLength:9]
+[main_dfu @1275] DFU mode device DFU version 0000
+[main_dfu @1347] parse_dfu_suffix
+[parse_dfu_suffix @189] Dfu suffix version 11a
+Warning: File product ID 10444655 does not match device 9353e5cc
+[main_dfu @1373] dfuse_do_dnload
+[parse_memory_layout @113] DfuSe interface name: "Internal Flash  "
+[parse_memory_layout @124]  /0x8000000/12
+[parse_memory_layout @132]  12*1K[^,/]76485248
+[parse_memory_layout @194] [8000000 -400- 8002fff] 1
+[parse_memory_layout @132]  500*1K[^,/]76485248
+[parse_memory_layout @194] [8003000 -400- 807ffff] 7
+address:757639d0 file.bcdDFU:0x0000
+[dfuse_do_dfuse_dnload @647] file contains 1 DFU images
+[dfuse_do_dfuse_dnload @650] parsing DFU image 1
+[dfuse_do_dfuse_dnload @665] image for alternate setting 0, 
+[dfuse_do_dfuse_dnload @666] (1 elements, 
+[dfuse_do_dfuse_dnload @668] total size = 380544)
+[dfuse_do_dfuse_dnload @676] parsing element 1, 
+[dfuse_do_dfuse_dnload @690] address = 0x08003000, 
+[dfuse_do_dfuse_dnload @691] size = 380536
+[dfuse_dnload_element @410] ...2
+[dfuse_dnload_element @411] dwElementSize:380536 Byte, dwElementAddress:12
+[dfuse_dnload_element @412] 0K [1K] 11K
+[dfuse_dnload_element @422] offset(p):       0(   0K)
+[dfuse_dnload_element @434] Addr: 12K [ 001F4000 byte | 2000 K | 1024 byte ]
+
+fflush!
+
+[dfuse_dnload_element @442] Erase ...
+[dfuse_dnload_element @443] 08003000 [00000400] 0807FFFF
+[dfuse_dnload_element @444] 08003000 [0005CE78] 0805FE78 | 00000400]
+
+fflush!
+
+[dfuse_dnload_element @484] .[dfuse_dnload_element @487] Download ...
+[dfuse_dnload_element @488] 08003000 [00000400] 0807FFFF
+[dfuse_dnload_element @489] 08003000 [0005CE78] 0805FE78 | 00000400]
+[dfuse_dnload_element @505] ***************
+[dfuse_dnload_element @538] Download end
+[dfuse_dnload_element @550] ***************
+
+fflush!
+
+[dfuse_dnload_element @557] 
+[dfuse_do_dfuse_dnload @750] done parsing DfuSe file
+[main_dfu @1390] DFU mode ...30
+[void MainWindow::TimerLogin() @165] DFU Download OK!
+[virtual MainWindow::~MainWindow() @89] ~MainWindow
+
+Log end!
